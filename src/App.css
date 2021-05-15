@@ -23,11 +23,13 @@ button {
 #Transcript {
   margin-top: 40px;
   margin-bottom: 20px;
-  font-size: 35px;
+  font-size: 30px;
+  width: 80%;
   max-width: 600px;
-  height: calc(100vh - 207px - 40px - 20px - 60px);
+  height: calc(100vh - 165px - 40px - 20px - 60px);
   overflow-y: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -51,7 +53,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 #MicWrapper {
@@ -59,14 +61,14 @@ button {
 }
 
 #Mic {
-  height: 120px;
+  height: 80px;
   pointer-events: none;
   margin: 20px;
 }
 
 .Border {
-  height: 160px;
-  width: 160px;
+  height: 120px;
+  width: 120px;
   position: absolute;
   top: 0;
   left: 0;
@@ -94,7 +96,7 @@ button {
   margin-left: 15px;
   background: none;
   color: grey;
-  font-size: 30px;
+  font-size: 25px;
   border: none;
   border-bottom: 1px solid white;
   appearance: none;
