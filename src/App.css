@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body, p {
+  margin: 0;
+  padding: 0;
   background-color: #282c34;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#Transcript {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  max-width: 600px;
+  height: calc(100vh - 207px - 40px - 20px - 60px);
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
+#Clear {
+  color: grey;
+  font-size: 20px;
+  margin-left: 5px;
+  padding-top: 13px;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+#Clear:hover {
+  color: white;
+}
+
+#Controls {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+#MicWrapper {
+  position: relative;
+}
+
+#Mic {
+  height: 120px;
+  pointer-events: none;
+  margin: 20px;
+}
+
+.Border {
+  height: 160px;
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.Border.Active {
+  border-left-color: white;
+  border-right-color: white;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
+}
+
+#Language {
+  margin-left: 15px;
+  background: none;
+  color: grey;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid white;
+  appearance: none;
+  cursor: pointer;
+
+  padding-right: 30px;
+  background-position: right;
+  background-size: 20px;
+  background-repeat: no-repeat;
+}
+
+#Language:hover {
+  color: white;
+}
+
+.LanguageOption {
+  background: #282c34;
 }
