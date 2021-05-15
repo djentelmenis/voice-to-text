@@ -26,7 +26,7 @@ button {
   font-size: 30px;
   width: 80%;
   max-width: 600px;
-  height: calc(100vh - 165px - 40px - 20px - 60px);
+  height: calc(100vh - 200px - 40px - 20px - 60px);
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ button {
 }
 
 #Controls {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
